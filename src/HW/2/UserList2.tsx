@@ -1,8 +1,8 @@
 import {CurrentUser} from './CurrentUser';
-import {UsersObjectType} from './HW2';
+import {UserType, UsersObjectType} from './HW2';
 
 type UserList2PropsType = {
-	users: any // пропиши типизацию
+	users: UserType [] // пропиши типизацию
 	filterUsers: any // пропиши типизацию
 };
 
