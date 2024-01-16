@@ -14,7 +14,7 @@ type UserType = {
 };
 
 type UserListPropsType = {
-  users: any// ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
+  users: any // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
 };
 
 export const UserList = (props: UserListPropsType) => {
