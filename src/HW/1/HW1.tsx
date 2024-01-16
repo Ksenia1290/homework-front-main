@@ -34,7 +34,6 @@ export const HW1 = () => {
 
 	return (
 		<div id={'hw01'}>
-		
 			<UserList users={users} /> 
 		</div>
 	);
