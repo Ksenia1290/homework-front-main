@@ -43,12 +43,13 @@ export const HW2 = () => {
       { id: 10, name: 'Emily', age: 55, address: { street: '765 Aspen Blvd', city: 'Los Angeles' } },
     ]
   }
-
+ // const cityFilter = (city:any , filter:any): any=>{}
   let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
+//let [filterUsers,setFilterUsers]=useState <AddressType>('Los Angeles')
 
  const filterUsers = () => {
     
-   const filteredUsers = users.myFriends.filter()
+   const filteredUsers = cityFilter(city,currentUsers)
 
     //'НУЖНО ПРОФИЛЬТРОВАТЬ ДРУЗЕЙ. ОСТАВЛЯЕМ ТОЛЬКО ТЕХ, КОТОРЫЕ ЖИВУТ В ГОРОДЕ LOS ANGELES';
     setCurrentUsers({ myFriends: filteredUsers });
