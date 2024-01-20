@@ -10,11 +10,11 @@ export type UserType = {
   id: number;
   name: string;
   age: number;
-  address: any; // пропиши типизацию
+  address: AddressType; // пропиши типизацию
 };
 
 export type UsersObjectType = {
-  myFriends: any; // пропиши типизацию
+  myFriends:UserType[] ; // пропиши типизацию
 };
 
 export const HW2 = () => {
@@ -24,7 +24,7 @@ export const HW2 = () => {
   // 2️⃣ Ваша задача: ❗ПОЧИНИТЬ ПРОЕКТ❗
   // - прописать типизацию, где необходимо
   // - починить все, что горит красным
-  // - дописать функциональность (где указано комментариями)
+  // - дописать функциональность (где указано комментариями)ddress
   // - приложение должно компилироваться и запускаться в браузере
 
   // ❗ Массив с данными не трогаем!
@@ -46,8 +46,11 @@ export const HW2 = () => {
 
   let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
 
-  const filterUsers = () => {
-    const filteredUsers = 'НУЖНО ПРОФИЛЬТРОВАТЬ ДРУЗЕЙ. ОСТАВЛЯЕМ ТОЛЬКО ТЕХ, КОТОРЫЕ ЖИВУТ В ГОРОДЕ LOS ANGELES';
+ const filterUsers = () => {
+    
+   const filteredUsers = users.myFriends.filter()
+
+    //'НУЖНО ПРОФИЛЬТРОВАТЬ ДРУЗЕЙ. ОСТАВЛЯЕМ ТОЛЬКО ТЕХ, КОТОРЫЕ ЖИВУТ В ГОРОДЕ LOS ANGELES';
     setCurrentUsers({ myFriends: filteredUsers });
   };
 
