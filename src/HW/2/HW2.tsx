@@ -45,7 +45,7 @@ export const HW2 = () => {
   }
  // const cityFilter = (city:any , filter:any): any=>{}
   let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
-//let [filterUsers,setFilterUsers]=useState <AddressType>('Los Angeles')
+//let [filterUsersValue,setFilterUsersValue]=useState <AddressType>(string)
 
  const filterUsers = () => {
     
