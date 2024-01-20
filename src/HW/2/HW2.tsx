@@ -14,7 +14,7 @@ export type UserType = {
 };
 
 export type UsersObjectType = {
-  myFriends:UserType[] ; // пропиши типизацию
+  myFriends: UserType[]; // пропиши типизацию
 };
 
 export const HW2 = () => {
