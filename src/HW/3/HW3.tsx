@@ -11,12 +11,13 @@ export const HW3 = () => {
 
 
   const [currentText, setCurrentText] = useState('');
+  console.log(currentText) 
   const [texts, setTexts] = useState<string[]>([
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-   console.log(event.currentTarget.value) // setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
+   setCurrentText(event.currentTarget.value)// setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
   };
 
   const handleSave = () => {
