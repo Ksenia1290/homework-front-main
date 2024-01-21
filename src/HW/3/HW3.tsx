@@ -11,7 +11,7 @@ export const HW3 = () => {
 
 
   const [currentText, setCurrentText] = useState('');
-  console.log(currentText) 
+
   const [texts, setTexts] = useState<string[]>([
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
@@ -42,7 +42,7 @@ export const HW3 = () => {
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
       <ol id={'hw03-tasks'}>
-        {ОТРИСОВАТЬ МАССИВ.map((el, index) => {
+        {texts.map((el, index) => {
           return (
             <li key={index} id={`hw03-task-${index}`}>
               {el}
