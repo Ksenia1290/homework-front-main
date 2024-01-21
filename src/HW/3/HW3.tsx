@@ -15,7 +15,7 @@ export const HW3 = () => {
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     // setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
   };
 
