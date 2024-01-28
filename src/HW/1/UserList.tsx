@@ -1,8 +1,8 @@
 import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
 
 type AddressType = {
-  street: string, // ПОДПРАВЛЯЕМ any
-  city: string, // ПОДПРАВЛЯЕМ any
+  street: string, 
+  city: string, 
 };
 
 type UserType = {
@@ -10,11 +10,10 @@ type UserType = {
   name: string,
   age: number, 
   address:AddressType[]
-  // ПРИДЕТСЯ САМОМУ)
 };
 
 type UserListPropsType = {
-  users: any // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
+  users: any ,
 };
 
 export const UserList = (props: UserListPropsType) => {
@@ -23,7 +22,7 @@ export const UserList = (props: UserListPropsType) => {
       <h2>User List:</h2>
 
       <ul>
-        {props.users.map((user: { id: Key | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; age: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; address: { street: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; city: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; }; }) => ( // ВСЕ ТОВАРЫ В СТРАНУ ПРИЕЗЖАЮТ В КОНТЕЙНЕРАХ, А В РЕАКТЕ...
+        {props.users.map((user: { id: Key | null | undefined; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; age: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; address: { street: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; city: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; }; }) => ( 
           <li key={user.id} id={`hw01-user-${user.id}`}>
             <strong>{user.name}</strong> (Age: {user.age})<strong> Address:</strong>
             {user.address.street}, {user.address.city}
