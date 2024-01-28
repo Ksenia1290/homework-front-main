@@ -1,5 +1,4 @@
 
-
 type AddressType = {
   street: string, 
   city: string, 
@@ -9,7 +8,7 @@ type UserType = {
   id: number,
   name: string,
   age: number, 
-  address:AddressType
+  address:AddressType,
 };
 
 type UserListPropsType = {
