@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, MouseEventHandler, useState } from 'react';
 
 export const HW3 = () => {
   
@@ -13,7 +13,7 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-    
+    setTexts()
     // ЗАСЕТАТЬ БЫ ТЕКСТ В texts И НЕ ПОТЕРЯТЬ НАПУТСТВИЕ ИЗ ПРОШЛОГО ВЕКА)
     // А ЗАТЕМ УБРАТЬ ЗА СОБОЙ В currentText
   };
