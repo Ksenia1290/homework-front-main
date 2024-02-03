@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, MouseEventHandler, useState } from 'react';
 
 export const HW3 = () => {
   
@@ -9,12 +9,13 @@ export const HW3 = () => {
   ]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-   setCurrentText(currentText);
+   setCurrentText(event.currentTarget.value)
   };
 
   const handleSave = () => {
-    setTexts([...texts,currentText]);
-    setCurrentText('');
+    setTexts([...texts,currentText])
+    setCurrentText('')
+    
   };
 
   return (
