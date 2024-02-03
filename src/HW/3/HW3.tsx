@@ -1,4 +1,4 @@
-import { ChangeEvent, MouseEventHandler, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
 export const HW3 = () => {
   
