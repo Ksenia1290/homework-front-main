@@ -9,9 +9,9 @@ export const HW3 = () => {
   ]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-   setCurrentText(event.currentTarget.value)
+   setCurrentText(currentText)
   };
-
+//event.currentTarget.value
   const handleSave = () => {
     setTexts([...texts,currentText]);
     setCurrentText('');
