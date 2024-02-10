@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import s from './HW4.module.css';
-import { Button } from './Button';
-import { Input } from './Input';
+//import { useState } from 'react';
+//import s from './HW4.module.css';
+//import { Button } from './Button';
+//import { Input } from './Input';
 
-export const HW4 = () => {
+//export const HW4 = () => {
 
-  const [currentText, setCurrentText] = useState('');
-  const [texts, setTexts] = useState<string[]>([
-    'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
-  ]);
+  //const [currentText, setCurrentText] = useState('');
+  //onst [texts, setTexts] = useState<string[]>([
+   // 'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
+// ]);
 
-  const handleSave = () => {
-    setTexts([currentText, ...texts]);
-    setCurrentText('');
-  };
+ // const handleSave = () => {
+ //   setTexts([currentText, ...texts]);
+ //   setCurrentText('');
+ // };
 
   return (
     <div id={'hw04'}>
