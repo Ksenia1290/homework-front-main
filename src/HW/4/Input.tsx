@@ -8,7 +8,7 @@ export const Input = (props: InputPropsType) => {
 		// НУЖНО ДОПИСАТЬ
 	};
 
-	// return (
-	//   <input id={'hw04-input'} type="text" value={props.currentText} onChange={onChangeHandler} />
-	// );
+	 return (
+	   <input id={'hw04-input'} type="text" value={props.currentText} onChange={onChangeHandler} />
+	 );
 };
