@@ -4,7 +4,7 @@ type InputPropsType = {
 };
 
 export const Input = (props: InputPropsType) => {
-	const onChangeHandler = (event: 'НУЖНО ПРОТИПИЗИРОВАТЬ') => {
+	const onChangeHandler = (event: '') => {
 		// НУЖНО ДОПИСАТЬ
 	};
 
