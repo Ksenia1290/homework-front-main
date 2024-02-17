@@ -23,7 +23,7 @@ export const HW4 = () => {
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
 
-      <Input НЕ ХВАТАЕТ АРГУМЕНТОВ />
+      <Input id={'hw04-input'} type="text" value={currentText} onChange={handleChange} />
 
       <Button НЕ ХВАТАЕТ АРГУМЕНТОВ />
 
