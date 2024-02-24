@@ -7,7 +7,7 @@ type InputPropsType = {
 
 export const Input = (props: InputPropsType) => {
 	const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
-		// НУЖНО ДОПИСАТЬ
+		props.currentText// НУЖНО ДОПИСАТЬ
 	};
 
 	 return (

@@ -25,14 +25,14 @@ export const HW4 = () => {
 
       <Input id={'hw04-input'} type="text" value={currentText} onChange={handleChange} />
 
-      <Button НЕ ХВАТАЕТ АРГУМЕНТОВ />
+      <Button name={''} callBack={}/>
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
       <ol id={'hw04-tasks'}>
        {texts.map((el, index) => {
           return (
-            <li key={index} id={`hw04-task-${index}`} className={ЕСЛИ ЧЕТН ? S.chetNechet : ''}>
+            <li key={index} id={`hw04-task-${index}`} className={el ? S.chetNechet : ''}>
               {el}
             </li>
           );
