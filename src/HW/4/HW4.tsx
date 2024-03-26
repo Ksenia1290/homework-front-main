@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 import s from './HW4.module.css';
 import { Button } from './Button';
 import { Input } from './Input';
@@ -10,8 +10,12 @@ export const HW4 = () => {
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
  ]);
 
+ const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+  setCurrentText (event.currentTarget.value)
+ };
+
   const handleSave = () => {
-    setTexts([currentText, ...texts]);
+    setTexts([ ...texts,currentText]);
     setCurrentText('');
   };
 
@@ -25,14 +29,14 @@ export const HW4 = () => {
 
       <Input id={'hw04-input'} type="text" value={currentText} onChange={handleChange} />
 
-      <Button name={''} callBack={}/>
+      <Button id={'hw04-button'} onClick={()=>{handleSave()}}/>
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
       <ol id={'hw04-tasks'}>
        {texts.map((el, index) => {
           return (
-            <li key={index} id={`hw04-task-${index}`} className={el ? S.chetNechet : ''}>
+            <li key={index} id={`hw04-task-${index}`} className={el ? s.chetNechet : ''}>
               {el}
             </li>
           );

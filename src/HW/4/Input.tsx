@@ -2,7 +2,9 @@ import { ChangeEvent } from "react";
 
 type InputPropsType = {
 	currentText: string // НУЖНО ПРОТИПИЗИРОВАТЬ
-	setCurrentText: React.Dispatch<React.SetStateAction<string>> // НУЖНО ПРОТИПИЗИРОВАТЬ
+	setCurrentText: React.Dispatch<React.SetStateAction<string>> 
+
+	// НУЖНО ПРОТИПИЗИРОВАТЬ
 };
 
 export const Input = (props: InputPropsType) => {
