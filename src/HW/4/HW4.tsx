@@ -29,7 +29,7 @@ export const HW4 = () => {
 
       <Input id={'hw04-input'} type="text" value={currentText} onChange={()=>{handleChange}} currentText={''} setCurrentText={function (value: SetStateAction<string>): void {} } />
 
-      <Button id={'hw04-button'} onClick={() => { handleSave(); } } callBack={function (): void {} } name={''}/>
+      <Button id={'hw04-button'} onClick={() => { handleSave()}} callBack={()=>{}} name={''}/>
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
