@@ -5,15 +5,15 @@ type ButtonPropsType = {
   name: string // НУЖНО ПРОТИПИЗИРОВАТЬ
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({callBack, name,className, ...restProps}:ButtonPropsType) => {
+export const Button = (props:ButtonPropsType) => {
  
   const callBackHandler = () => {
-    callBack() // НУЖНО ДОПИСАТЬ
+    props.callBack() // НУЖНО ДОПИСАТЬ
   };
 
   return (
-    <button id={'hw04-button'} onClick={callBackHandler} className={className}>
-      {name}
+    <button id={'hw04-button'} onClick={callBackHandler} >
+      {props.name}
     </button>
   );
 };
