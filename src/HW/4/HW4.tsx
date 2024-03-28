@@ -31,7 +31,7 @@ export const HW4 = () => {
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
 
-      <Input id={'hw04-input'} type="text" value={currentText} onChange={()=>{}} currentText={''} setCurrentText={function (value: SetStateAction<string>): void {
+      <Input id={'hw04-input'} type="text" value={currentText} onChange={()=>{handleChange}} currentText={''} setCurrentText={function (value: SetStateAction<string>): void {
         throw new Error('Function not implemented.');
       } } />
 
