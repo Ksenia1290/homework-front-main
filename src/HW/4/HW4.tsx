@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, SetStateAction, useState } from 'react';
 import s from './HW4.module.css';
 import { Button } from './Button';
 import { Input } from './Input';
@@ -19,6 +19,10 @@ export const HW4 = () => {
     setCurrentText('');
   };
 
+  function onChangeHandler(event: ChangeEvent<HTMLButtonElement>): void {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <div id={'hw04'}>
       {currentText ? (
@@ -27,9 +31,13 @@ export const HW4 = () => {
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
 
-      <Input id={'hw04-input'} type="text" value={currentText} onChange={handleChange} />
+      <Input id={'hw04-input'} type="text" value={currentText} onChange={onChangeHandler} currentText={''} setCurrentText={function (value: SetStateAction<string>): void {
+        throw new Error('Function not implemented.');
+      } } />
 
-      <Button id={'hw04-button'} onClick={()=>{handleSave()}}/>
+      <Button id={'hw04-button'} onClick={() => { handleSave(); } } callBack={function (): void {
+        throw new Error('Function not implemented.');
+      } } name={''}/>
 
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 

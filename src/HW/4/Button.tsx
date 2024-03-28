@@ -1,16 +1,18 @@
+import { ButtonHTMLAttributes } from "react";
+
 type ButtonPropsType = {
   callBack: ()=>void // НУЖНО ПРОТИПИЗИРОВАТЬ
   name: string // НУЖНО ПРОТИПИЗИРОВАТЬ
-};
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({callBack, name, ...restProps}:ButtonPropsType) => {
+export const Button = ({callBack, name,className, ...restProps}:ButtonPropsType) => {
  
   const callBackHandler = () => {
     callBack() // НУЖНО ДОПИСАТЬ
   };
 
   return (
-    <button id={'hw04-button'} onClick={callBackHandler}>
+    <button id={'hw04-button'} onClick={callBackHandler} className={className}>
       {name}
     </button>
   );
