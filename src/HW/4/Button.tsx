@@ -3,17 +3,18 @@ import { ButtonHTMLAttributes } from "react";
 type ButtonPropsType = {
   callBack: ()=>void // НУЖНО ПРОТИПИЗИРОВАТЬ
   name: string // НУЖНО ПРОТИПИЗИРОВАТЬ
-} & ButtonHTMLAttributes<HTMLButtonElement>
+}
+// & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = (props:ButtonPropsType) => {
+export const Button = ({callBack,name}:ButtonPropsType) => {
  
   const callBackHandler = () => {
-    props.callBack() // НУЖНО ДОПИСАТЬ
+    callBack() // НУЖНО ДОПИСАТЬ
   };
 
   return (
     <button id={'hw04-button'} onClick={callBackHandler} >
-      {props.name}
+      {name}
     </button>
   );
 };
