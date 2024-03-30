@@ -27,7 +27,7 @@ export const HW4 = () => {
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
 
-<Input setCurrentText={setCurrentText}  currentText={currentText} onChange={handleChange}/>
+<Input setCurrentText={setCurrentText}  currentText={currentText} />
 <Button  name={'+'} callBack={handleSave} />
 
 

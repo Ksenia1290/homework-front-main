@@ -2,7 +2,8 @@ import { ChangeEvent, InputHTMLAttributes } from "react";
 
 type InputPropsType = {
 	currentText: string // НУЖНО ПРОТИПИЗИРОВАТЬ
-	setCurrentText: React.Dispatch<React.SetStateAction<string>> 
+	setCurrentText: (currentText:string)=>void
+	//React.Dispatch<React.SetStateAction<string>> 
 	// НУЖНО ПРОТИПИЗИРОВАТЬ
 } & InputHTMLAttributes<HTMLButtonElement>
 
