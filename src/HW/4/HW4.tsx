@@ -9,9 +9,9 @@ export const HW4 = () => {
   const [texts, setTexts] = useState<string[]>([
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
  ]);
-
- const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-  setCurrentText (event.currentTarget.value)
+//event: ChangeEvent<HTMLInputElement>
+ const handleChange = () => {
+  setCurrentText ('')
  };
 
   const handleSave = () => {
@@ -26,7 +26,7 @@ export const HW4 = () => {
       ) : (
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
-      
+
 <Input setCurrentText={setCurrentText}  currentText={currentText}/>
 <Button  name={'+'} callBack={handleSave} />
 
