@@ -8,6 +8,7 @@ type InputPropsType = {
 } & InputHTMLAttributes<HTMLButtonElement>
 
 export const Input = ({currentText,setCurrentText}: InputPropsType) => {
+	
 	const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		setCurrentText(event.currentTarget.value)// НУЖНО ДОПИСАТЬ
 	};
