@@ -3,8 +3,6 @@ import { ButtonHTMLAttributes } from "react";
 type ButtonPropsType = {
   callBack: ()=>void // НУЖНО ПРОТИПИЗИРОВАТЬ
   name: string // НУЖНО ПРОТИПИЗИРОВАТЬ
-  id: string
-  onClick: () => void
 }
 // & ButtonHTMLAttributes<HTMLButtonElement>
 
